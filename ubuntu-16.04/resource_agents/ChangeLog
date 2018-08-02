@@ -1,0 +1,65 @@
+2016/5/2 release 3.0
+	* Support pgpool-II 3.5.x (especially for pcp_* commands' change)
+	* Abolish configure script, Makefile and other files
+
+2014/4/1 release 2.2
+
+2014/1/28
+	* fix metadata for pcs command's xml parser
+
+2013/9/13
+	* Add wait loop to start action function.
+
+2013/4/25 release 2.1
+
+2013/2/7
+	* fix behavior of stop to wait until process disappeared
+	* add parameters: pgpoolcmd, psqlcmd, pcpnccmd
+
+2012/12/25
+	* fix logfile parameter
+	* fix pgpooluser parameter meta-data description
+	* put tabs and spaces in order
+
+2012/10/15 release 2.0
+	* rewrite completely from the 1.x version script
+	* allow monitoring method to chose one from 3 types; "pid", "pcp" and "psql"
+	* use of Perl was abolished
+
+2012/02/17
+	* add "pkill -P 1 pgpool" when missing pgpool main process at stop-action 
+	* add OCF_RESKEY_monitor_ip
+	* fix indent
+
+2010/11/8
+	* fix bug in pgpool.monitor arguments.
+
+2010/1/18
+	* add "pgpooluser" parameter
+
+2009/3/18 release 1.2
+	* add "pidfile" parameter
+	* fix typo bugs
+	* renew sample cib.xml tested on heartbeat 2.1.4, pgpool-II 2.1
+	* pipe expression was able to be used at "logfile"
+	* make pgpool.in always use "pgpool stop -m immediate" to (stop)
+	* add "options" parameter
+
+2007/6/XX release 1.1
+	* fix ocf script to work properly with pgpool 3.2+ .
+	* Works well with pgpool-II. 
+	* New configuration variables added .
+	  you can specify path of configuration files .
+	  It means you can run multiple pgpool instances on single heartbeat
+	  instance.
+
+               pgpoolconf   path to pgpool.conf
+               pcpconf      path to pcp.conf
+               hbaconf      path to pool_hba.conf
+
+	* support log redirection . use "logfile" parameter to specify logfile
+	 location.If you set this parameter. If you specify logfile parameter ,
+	 "-d" option added automaticully.
+
+
+2006/8/21 initial release
