@@ -12,14 +12,14 @@ It helps you quickly spin up a 3-node cluster of PostgreSQL, managed by Pacemake
 
 When you start the cluster, you get 3 nodes, each running:
 
-  - PostgreSQL 10.3.1
+  - PostgreSQL
   - Pacemaker
   - PgBouncer
   - PgPool
   - PgAgent
 
 
-Codes tested in Centos 7 and Ubuntu 16.04.
+Codes tested in Centos 7 (PostgreSQL 10) and Ubuntu 16.04 (PostgreSQL 9.4) .
 
 The cluster is configured with a single primary, one synchronous replica, and one asynchronous replica.
 
